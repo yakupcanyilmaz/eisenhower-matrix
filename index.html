@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Eisenhower Matrix</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Eisenhower Matrix</h1>
+    </header>
+
+    <form id="add-form">
+      <div class="add-container">
+        <select class="add-urgency-type">
+          <option value="urgent">Urgent</option>
+          <option value="not-urgent">Not Urgent</option>
+        </select>
+        <select class="add-importance-type">
+          <option value="important">Important</option>
+          <option value="not-important">Not Important</option>
+        </select>
+        <input
+          type="text"
+          class="add-description"
+          placeholder="Task Description"
+        />
+        <input type="number" class="add-hour" placeholder="Hour" />
+        <button class="add-btn">
+          Add
+        </button>
+      </div>
+    </form>
+
+    <section id="matrix">
+      <div class="matrix-container ">
+        <div class="do-first">
+          <div class=" do-first-title ">
+            <h2 class="item-description">DO FIRST</h2>
+            <div class="hour">
+              <h2>Total Hours:&nbsp</h2>
+              <h2 class="item-hour do-first-total-hour">-</h2>
+            </div>
+          </div>
+
+          <div class="do-first-list">
+            <!--
+            <div class="item " id="doFirst-0">
+              <div class="item-description">Do first-0</div>
+              <div class="hour">
+                <div class="item-hour">1.00</div>
+                <div class="item-delete">
+                  <button class="item-delete-btn">
+                    <i class="ion-ios-close-outline"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <div class="schedule">
+          <div class="schedule-title">
+            <h2 class="item-description">SCHEDULE</h2>
+            <div class="hour ">
+              <h2>Total Hours:&nbsp</h2>
+              <h2 class="item-hour schedule-total-hour">-</h2>
+            </div>
+          </div>
+
+          <div class="schedule-list">
+            <!--
+            <div class="item " id="schedule-0">
+              <div class="item-description">Schedule-0</div>
+              <div class="hour">
+                <div class="item-hour">1.00</div>
+                <div class="item-delete">
+                  <button class="item-delete-btn">
+                    <i class="ion-ios-close-outline"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <div class="delegate">
+          <div class="delegate-title">
+            <h2 class="item-description">DELEGATE</h2>
+            <div class="hour">
+              <h2>Total Hours:&nbsp</h2>
+              <h2 class="item-hour delegate-total-hour">-</h2>
+            </div>
+          </div>
+          <div class="delegate-list">
+            <!--
+              <div class="item " id="delegate-0">
+                <div class="item-description">Delegate-0</div>
+                <div class="hour ">
+                  <div class="item-hour">1.00</div>
+                  <div class="item-delete">
+                    <button class="item-delete-btn">
+                      <i class="ion-ios-close-outline"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            -->
+          </div>
+        </div>
+
+        <div class="eliminate">
+          <div class=" eliminate-title ">
+            <h2 class="item-description">ELIMINATE</h2>
+            <div class="hour ">
+              <h2>Total Hours:&nbsp</h2>
+              <h2 class="item-hour eliminate-total-hour">-</h2>
+            </div>
+          </div>
+          <div class="eliminate-list">
+            <!--
+              <div class="item " id="eliminate-0">
+                <div class="item-description">Eliminate-0</div>
+                <div class="hour ">
+                  <div class="item-hour">1.00 h</div>
+                  <div class="item-delete">
+                    <button class="item-delete-btn">
+                      <i class="ion-ios-close-outline"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
